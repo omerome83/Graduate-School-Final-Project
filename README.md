@@ -1,2 +1,7 @@
 # Graduate Degree Final Project
- A personal website I created as my final project for grad school in 2009.
+
+## Overview
+
+A personal website I created as my final project for grad school in 2009 using HTML/CSS/JavaScript.
+
+![Screenshot](./screenshot.png)
