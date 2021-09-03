@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font: 90% Verdana, Arial, Helvetica, sans-serif;
+	background: url(../images/background.png);
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #40403F;
+}
+h1, h2, h3, h4 {
+	color: #FFE295; /* Tan color */
+	background: url(../images/header.png);
+	padding: 5px;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	margin-top: 10px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+h2 {
+	margin-left: -5px; /* To remove the space (5px) in front of the gradient heading */
+}
+h2 img {
+	float: left;
+	margin-top: -12px;
+	margin-left: -5px;
+	padding: 0px;
+}
+img {
+	border: 0px;
+	border-bottom: 0px;
+}
+a {
+	font-weight: bold;
+}
+a:link {
+	text-decoration: none;
+	color: #14980a;
+	border-bottom: 0px;
+}
+a:visited {
+	text-decoration: none;
+	color: #14980a;
+	border-bottom: 0px;
+}
+a:hover {
+	/*opacity: .65; /* Fade the links on mouseover */
+	text-decoration: underline;
+}
+/* Rounded Corners */
+
+
+/* End Rounded Corners */
+
+/* Table Definitions */
+
+td, th {
+	padding: 5px;
+}
+#title {
+	font-weight: bold;
+}
+td {
+	font-size: 85%;
+}
+th {
+	background: url(../images/header.png);
+	color: #FFE295;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	font-size: 85%;
+}
+tr {
+	border-right: 3px;
+	background-color: #efefef;
+	color: #010040;
+}
+tr.alt {
+	background-color: #fefae8;
+	color: #7F360C;
+}
+table {
+	text-align: left;
+	margin-top: 1px; /* To align with the other page's margin */
+	border-collapse: collapse;
+}
+.website_caption {
+	font-weight: bold;
+}
+/* End Table Definitions */
+
+/* Form Definitions */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: 600px;
+}
+label {
+	display: block;
+}
+input.text, textarea {
+	width: 300px;
+	padding: 3px;
+	margin: 1px 0;
+	border: 1px solid #ccc;
+}
+input.submit {
+	padding: 2px 5px;
+}
+/* End Form Definitions */
+
+.twoColFixRtHdr #page_title {
+	font-size: 80%;
+	background: url(../images/page_title_background.jpg);
+	padding: 5px;
+}
+.layout_accent {
+	background-image: url(../images/accent.jpg);
+	height: 13px;
+	background-repeat: repeat-x;
+	padding: 0px;
+	border: 1px solid #2f2f2f;
+}
+hr {
+	border: 1px dashed #585858;
+}
+#border {
+	padding: 15px;
+	width: 780px; /* width of the page */
+	margin: 0 auto;
+	background-color: #E4E4E4; /* Gray color */
+	margin-top: 10px; /* Bring down the page 10 pixels */
+	border: 1px solid #3F3925;
+}
+.twoColFixRtHdr #container {
+	width: 780px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #fffff4;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px dashed #585858;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.twoColFixRtHdr #header {
+/*padding: 0 0px 0 0px;/* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+}
+.twoColFixRtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.twoColFixRtHdr #sidebar1 {
+	float: right; /* since this element is floated, a width must be given */
+	width: 200px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #fffff4; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px;
+}
+.twoColFixRtHdr #mainContent {
+	margin: 0 215px 0 0; /* the right margin on this div element creates the column down the right side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
+	padding: 0 5px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	margin-top: 15px;
+}
+.twoColFixRtHdr #mainContent li {
+	list-style: none;
+	background-image: url(../images/check.png); /* Check bullet */
+	background-repeat: no-repeat;
+	margin-left: 0px;
+	padding-left: 18px; /* The space between the bullet and the text */
+	margin-bottom: 5px; /* The space under each bulleted text */
+	background-position: 0px 3px;
+}
+.twoColFixRtHdr #mainContent img {
+	border: 1px solid #585858; /* Dark gray (1 pixel) border around images */
+	padding: 0px;/*	background-color: #cdcdcd;*/
+}
+.twoColFixRtHdr #footer {
+	padding: 5px;/*0 10px 0 20px*/
+	/* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background-image: url(../images/header.png);
+	font-size: 65%;
+	font-weight: bold;
+	color: #E4E4E4; /* Gray color */
+	text-transform: uppercase;
+}
+.twoColFixRtHdr #footer img {
+	border: 0px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border-bottom: 0px;
+}
+.twoColFixRtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+	width: auto;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+	width: auto;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
