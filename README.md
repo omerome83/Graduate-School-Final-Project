@@ -1,4 +1,4 @@
-# Graduate Degree Final Project
+# Graduate School Final Project
 
 ## Overview
 
