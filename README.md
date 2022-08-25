@@ -7,4 +7,4 @@ A personal website I created as my final project for grad school using HTML/CSS/
 ![Screenshot](./screenshot.png)
 
 ### Link
-URL: https://omerome83.github.io/Graduate-School-Final-Project
+https://omerome83.github.io/Graduate-School-Final-Project
